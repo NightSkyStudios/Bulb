@@ -6,5 +6,10 @@
 @import "global";
 @import "helpers";
 @import "buttons";
-@import "mixins";
 @import "type";
+@import "alert";
+@import "quotes";
+
+
+@import "mixins/border-radius";
+@import "mixins/alert";

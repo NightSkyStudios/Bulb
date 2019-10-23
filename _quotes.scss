@@ -1,0 +1,57 @@
+.explanation {
+  padding: 1rem 2rem;
+  border: 10px solid #fff;
+  border-radius: 16px;
+  position: relative;
+  background: #fff;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid #463150;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+
+  &:after {
+    font-family: "Montserrat", sans-serif;
+    content: attr(data-header);
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    top: -19px;
+    left: 1rem;
+    background: #fff;
+    padding: 0 0.5rem;
+    font-size: 0.6rem;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+.quote {
+  @each $color in $colors {
+    &-#{$color} {
+      font-size: 1.1rem;
+      padding: 0.25rem 0 0.25rem 1.5rem;
+      position: relative;
+      &:before {
+        content: "";
+        left: 0;
+        top: 0;
+        position: absolute;
+        height: 100%;
+        width: 4px;
+        background: linear-gradient(225deg, var(--#{$color}), var(--#{$color}-lighter));
+        -webkit-box-shadow: 0 0 5px var(--#{$color}-lighter);
+        -moz-box-shadow: 0 0 5px var(--#{$color}-lighter);
+        box-shadow: 0 0 5px var(--#{$color}-lighter);
+        border-radius: 4px;
+      }
+    }
+  }
+}
