@@ -1,0 +1,46 @@
+:root {
+    //Colors
+    --black: black;
+    --white: #fdfdfd;
+    --primary: #6190e8;
+    --primary-lighter: #a5c5ff;
+    --success: #38EF7D;
+    --success-lighter: #6effa1;
+    --warning: #F2994A;
+    --warning-lighter: #ffb380;
+    --danger: #f80759;
+    --danger-lighter: #ff4080;
+
+    //Color Scheme
+    --blue: #2980b9;
+    --blue-lighter: #34abf4;
+    --pink: #833471;
+    --pink-lighter: #cb51af;
+    --green: #0a3d62;
+    --green-lighter: #1169a8;
+    --grey: #34495e;
+    --grey-lighter: #5f85ab;
+    --coral: #e58e26;
+    --coral-lighter: #ffaa5a;
+    --purple: #654385;
+    --purple-lighter: #a66fdb;
+
+
+    //Colors Code
+    //General
+    --background-editor: #263238;
+    --text-special: #89ddff;
+    --comment: #546e7a;
+    --text-general: #c3cee3;
+
+    //Python
+    --py-key-violet: #BD92EA;
+    --py-parameter-red: #F78C6C;
+    --py-method-blue: #82AAFF;
+    --py-string-green: #C3E88D;
+
+    //HTML
+    --html-key-red: #F07178;
+    --html-key-yellow: #ffcb6b;
+    --html-key-green: #c3e88d;
+}

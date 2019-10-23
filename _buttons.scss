@@ -1,0 +1,45 @@
+.btn-round {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color .3s, box-shadow .3s, -webkit-box-shadow .3s, -moz-box-shadow .3s;
+    color: var(--white);
+
+	i{
+		font-size: 1.25rem;
+	}
+
+    &-icon {
+        padding: .5rem 1rem;
+		font-size: 2rem;
+        border: none;
+        border-radius: 2rem;
+        cursor: pointer;
+        transition: background-color .3s, box-shadow .3s, -webkit-box-shadow .3s, -moz-box-shadow .3s;
+        color: var(--white);
+    }
+}
+
+.btn-full{
+	width: 100%;
+}
+
+.btn {
+    @each $color in $colors {
+        &-#{$color} {
+            background: var(--#{$color});
+            -webkit-box-shadow: 0 0 0 var(--#{$color});
+            -moz-box-shadow: 0 0 0 var(--#{$color});
+            box-shadow: 0 0 0 var(--#{$color});
+
+            &:hover {
+                background: var(--#{$color}-lighter);
+                -webkit-box-shadow: 0 0 15px var(--#{$color}-lighter);
+                -moz-box-shadow: 0 0 15px var(--#{$color}-lighter);
+                box-shadow: 0 0 15px var(--#{$color}-lighter);
+            }
+        }
+    }
+}

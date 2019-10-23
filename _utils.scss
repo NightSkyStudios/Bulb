@@ -1,0 +1,116 @@
+.o-hidden{
+    overflow: hidden;
+}
+
+.absolute-center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.center {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+}
+
+.v-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.absolute-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+@for $i from 1 through 10 {
+    .fs-#{$i} {
+        font-size: #{$i}em;
+    }
+}
+
+@for $i from 1 through 9 {
+    .fw-#{$i} {
+        font-weight: $i * 100;
+    }
+}
+
+@for $i from 1 through 10 {
+    .m-#{$i} {
+        margin: #{$i}rem;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: #{$i}rem;
+    }
+
+    .mt-#{$i} {
+        margin-top: #{$i}rem;
+    }
+
+    .ml-#{$i} {
+        margin-left: #{$i}rem;
+    }
+
+    .mr-#{$i} {
+        margin-right: #{$i}rem;
+    }
+
+    .my-#{$i} {
+        margin: #{$i}rem 0;
+    }
+
+    .mx-#{$i} {
+        margin: 0 #{$i}rem;
+    }
+}
+
+@for $i from 1 through 10 {
+    .p-#{$i} {
+        padding: #{$i}rem;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: #{$i}rem;
+    }
+
+    .pt-#{$i} {
+        padding-top: #{$i}rem;
+    }
+
+    .pl-#{$i} {
+        padding-left: #{$i}rem;
+    }
+
+    .pr-#{$i} {
+        padding-right: #{$i}rem;
+    }
+
+    .py-#{$i} {
+        padding: #{$i}rem 0;
+    }
+
+    .px-#{$i} {
+        padding: 0 #{$i}rem;
+    }
+}
