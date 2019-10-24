@@ -1,0 +1,39 @@
+$colors: primary, success, warning, danger, blue, grey, pink, coral, purple, green;
+
+.link {
+  position: relative;
+  color: black;
+  transition: color .3s;
+
+  &:before {
+    background: #000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    transition: .3s ease;
+    z-index: -1;
+    height: 100%;
+    transform: scaleY(0.05);
+    transform-origin: bottom;
+  }
+
+  &:hover {
+    color: var(--white);
+
+    &:before {
+      transform: scaleY(1);
+    }
+  }
+
+  @each $color in $colors {
+    &-#{$color} {
+      color: var(--#{$color});
+
+      &:before {
+        background: var(--#{$color});
+      }
+    }
+  }
+}

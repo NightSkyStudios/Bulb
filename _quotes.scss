@@ -1,5 +1,6 @@
 $colors: primary, success, warning, danger, blue, grey, pink, coral, purple, green;
 
+//Big quote
 .explanation {
     padding: 1rem 2rem;
     border: 10px solid #fff;
@@ -37,12 +38,13 @@ $colors: primary, success, warning, danger, blue, grey, pink, coral, purple, gre
     @each $color in $colors {
         &-#{$color} {
             &:before {
-                border: 2px solid #{$color};
+                border: 2px solid var(--#{$color});
             }
         }
     }
 }
 
+//Small Quote
 .quote {
     @each $color in $colors {
         &-#{$color} {

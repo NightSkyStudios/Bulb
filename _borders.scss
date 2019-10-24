@@ -1,11 +1,13 @@
 $colors: primary, success, warning, danger, blue, grey, pink, coral, purple, green;
 
+
+//Border variations
 .border {
   border: 1px solid #000000 !important;
 
   @each $color in $colors {
     &-#{$color} {
-      border: 1px solid #{$color};
+      border: 1px solid var(--#{$color});
     }
   }
 }
@@ -15,7 +17,7 @@ $colors: primary, success, warning, danger, blue, grey, pink, coral, purple, gre
 
   @each $color in $colors {
     &-#{$color} {
-      border-top: 1px solid #{$color};
+      border-top: 1px solid var(--#{$color});
     }
   }
 }
@@ -25,7 +27,7 @@ $colors: primary, success, warning, danger, blue, grey, pink, coral, purple, gre
 
   @each $color in $colors {
     &-#{$color} {
-      border-right: 1px solid #{$color};
+      border-right: 1px solid var(--#{$color});
     }
   }
 }
@@ -35,7 +37,7 @@ $colors: primary, success, warning, danger, blue, grey, pink, coral, purple, gre
 
   @each $color in $colors {
     &-#{$color} {
-      border-bottom: 1px solid #{$color};
+      border-bottom: 1px solid var(--#{$color});
     }
   }
 }
@@ -45,7 +47,7 @@ $colors: primary, success, warning, danger, blue, grey, pink, coral, purple, gre
 
   @each $color in $colors {
     &-#{$color} {
-      border-left: 1px solid #{$color};
+      border-left: 1px solid var(--#{$color});
     }
   }
 }

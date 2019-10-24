@@ -2,6 +2,8 @@
     width: auto;
 }
 
+
+//Width
 @for $i from 1 through 10 {
     .w-#{$i *10} {
         width: $i * 10%;
@@ -18,6 +20,8 @@
     height: auto;
 }
 
+
+//Height
 @for $i from 1 through 10 {
     .h-#{$i *10} {
         height: $i * 10%;
