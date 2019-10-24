@@ -1,0 +1,116 @@
+$colors: primary, success, warning, danger, blue, grey, pink, coral, purple, green;
+
+.border {
+  border: 1px solid #000000 !important;
+
+  @each $color in $colors {
+    &-#{$color} {
+      border: 1px solid #{$color};
+    }
+  }
+}
+
+.border-top {
+  border-top: 1px solid #000000 !important;
+
+  @each $color in $colors {
+    &-#{$color} {
+      border-top: 1px solid #{$color};
+    }
+  }
+}
+
+.border-right {
+  border-right: 1px solid #000000 !important;
+
+  @each $color in $colors {
+    &-#{$color} {
+      border-right: 1px solid #{$color};
+    }
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid #000000 !important;
+
+  @each $color in $colors {
+    &-#{$color} {
+      border-bottom: 1px solid #{$color};
+    }
+  }
+}
+
+.border-left {
+  border-left: 1px solid #000000 !important;
+
+  @each $color in $colors {
+    &-#{$color} {
+      border-left: 1px solid #{$color};
+    }
+  }
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.border-top-0 {
+  border-top: 0 !important;
+}
+
+.border-right-0 {
+  border-right: 0 !important;
+}
+
+.border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
+.border-left-0 {
+  border-left: 0 !important;
+}
+
+
+.rounded-sm {
+  border-radius: .2rem !important;
+}
+
+.rounded {
+  border-radius: .25rem !important;
+}
+
+.rounded-top {
+  border-top-left-radius: .25rem !important;
+  border-top-right-radius: .25rem !important;
+}
+
+.rounded-right {
+  border-top-right-radius: .25rem !important;
+  border-bottom-right-radius: .25rem !important;
+}
+
+.rounded-bottom {
+  border-bottom-right-radius: .25rem !important;
+  border-bottom-left-radius: .25rem !important;
+}
+
+.rounded-left {
+  border-top-left-radius: .25rem !important;
+  border-bottom-left-radius: .25rem !important;
+}
+
+.rounded-lg {
+  border-radius: .3rem !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+.rounded-0 {
+  border-radius: 0 !important;
+}

@@ -13,7 +13,7 @@ body {
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
+}
 
 a {
     text-decoration: none;
@@ -44,18 +44,19 @@ button {
         transform-origin: bottom;
     }
 
-    &:hover{
+    &:hover {
         color: var(--white);
-        &:before{
+
+        &:before {
             transform: scaleY(1);
         }
     }
 
-    @each $color in $colors{
-        &-#{$color}{
+    @each $color in $colors {
+        &-#{$color} {
             color: var(--#{$color});
 
-            &:before{
+            &:before {
                 background: var(--#{$color});
             }
         }

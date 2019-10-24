@@ -1,117 +1,117 @@
 :root {
-  --glow-intense: 5px;
+    --glow-intense: 5px;
 }
 
 pre {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding: 2rem;
-  margin: 2rem;
-  border-radius: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
 
-  .nocode {
-    color: var(--text-special);
-  }
+    .nocode {
+        color: var(--text-special);
+    }
 
-  .str {
-    color: var(--py-string-green);
-  }
+    .str {
+        color: var(--py-string-green);
+    }
 
-  .kwd {
-    color: var(--py-key-violet);
-  }
+    .kwd {
+        color: var(--py-key-violet);
+    }
 
-  .com {
-    color: var(--comment);
-  }
+    .com {
+        color: var(--comment);
+    }
 
-  .typ {
-    color: var(--py-parameter-red);
-  }
+    .typ {
+        color: var(--py-parameter-red);
+    }
 
-  .lit {
-    color: var(--py-parameter-red);
-  }
+    .lit {
+        color: var(--py-parameter-red);
+    }
 
-  .pun {
-    color: var(--text-special);
-  }
+    .pun {
+        color: var(--text-special);
+    }
 
-  .pln {
-    color: var(--py-method-blue);
-  }
+    .pln {
+        color: var(--py-method-blue);
+    }
 
-  .tag {
-    color: var(--html-key-red);
-  }
+    .tag {
+        color: var(--html-key-red);
+    }
 
-  .atn {
-    color: var(--html-key-yellow);
-  }
+    .atn {
+        color: var(--html-key-yellow);
+    }
 
-  .atv {
-    color: var(--html-key-green);
-  }
+    .atv {
+        color: var(--html-key-green);
+    }
 
-  .dec {
-    color: var(--py-parameter-red);
-  }
+    .dec {
+        color: var(--py-parameter-red);
+    }
 }
 
 .glow {
-  .nocode {
-    filter: drop-shadow(0 0 var(--glow-intense) var(--text-general));
-  }
+    .nocode {
+        filter: drop-shadow(0 0 var(--glow-intense) var(--text-general));
+    }
 
-  .str {
-    filter: drop-shadow(0 0 var(--glow-intense) var(--py-string-green));
-  }
+    .str {
+        filter: drop-shadow(0 0 var(--glow-intense) var(--py-string-green));
+    }
 
-  .kwd {
-    filter: drop-shadow(0 0 var(--glow-intense) var(--py-key-violet));
-  }
+    .kwd {
+        filter: drop-shadow(0 0 var(--glow-intense) var(--py-key-violet));
+    }
 
-  .com {
-    filter: drop-shadow(0 0 var(--glow-intense) var(--comment));
-  }
+    .com {
+        filter: drop-shadow(0 0 var(--glow-intense) var(--comment));
+    }
 
-  .typ {
-    filter: drop-shadow(0 0 var(--glow-intense) var(--py-parameter-red));
-  }
+    .typ {
+        filter: drop-shadow(0 0 var(--glow-intense) var(--py-parameter-red));
+    }
 
-  .lit {
-    filter: drop-shadow(0 0 var(--glow-intense) var(--py-parameter-red));
-  }
+    .lit {
+        filter: drop-shadow(0 0 var(--glow-intense) var(--py-parameter-red));
+    }
 
-  .pun {
-    filter: drop-shadow(0 0 var(--glow-intense) var(--text-special));
-  }
+    .pun {
+        filter: drop-shadow(0 0 var(--glow-intense) var(--text-special));
+    }
 
-  .pln {
-    filter: drop-shadow(0 0 var(--glow-intense) var(--py-method-blue));
-  }
+    .pln {
+        filter: drop-shadow(0 0 var(--glow-intense) var(--py-method-blue));
+    }
 
-  .tag {
-    filter: drop-shadow(0 0 var(--glow-intense) var(--html-key-red));
-  }
+    .tag {
+        filter: drop-shadow(0 0 var(--glow-intense) var(--html-key-red));
+    }
 
-  .atn {
-    filter: drop-shadow(0 0 var(--glow-intense) var(--html-key-yellow));
-  }
+    .atn {
+        filter: drop-shadow(0 0 var(--glow-intense) var(--html-key-yellow));
+    }
 
-  .atv {
-    filter: drop-shadow(0 0 var(--glow-intense) var(--html-key-green));
-  }
+    .atv {
+        filter: drop-shadow(0 0 var(--glow-intense) var(--html-key-green));
+    }
 
-  .dec {
-    filter: drop-shadow(0 0 var(--glow-intense) var(--py-parameter-red));
-  }
+    .dec {
+        filter: drop-shadow(0 0 var(--glow-intense) var(--py-parameter-red));
+    }
 }
 
 ol.linenums {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #aeaeae;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #aeaeae;
 }
 
 /* IE indents via margin-left */
@@ -123,11 +123,11 @@ li.L5,
 li.L6,
 li.L7,
 li.L8 {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .prettyprint {
-  display: block;
-  border: none;
-  background-color: var(--background-editor);
+    display: block;
+    border: none;
+    background-color: var(--background-editor);
 }

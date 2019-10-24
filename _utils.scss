@@ -1,6 +1,11 @@
-.o-hidden{
+.o-hidden {
     overflow: hidden;
 }
+
+.o-auto {
+    overflow: auto;
+}
+
 
 .absolute-center {
     position: absolute;
@@ -15,13 +20,6 @@
     left: 50%;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.text-justify {
-    text-align: justify;
-}
 
 .right {
     position: absolute;
