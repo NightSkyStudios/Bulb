@@ -1,0 +1,52 @@
+$colors: black, white, primary, success, warning, danger, blue, grey, pink, coral, purple, green;
+@import "mixins";
+
+table, td, th {
+    text-align: left;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+}
+
+
+.tr-hover {
+    @each $color in $colors {
+        &-#{$color}:hover {
+            background-color: var(--#{$color});
+        }
+
+        &-lighter-#{$color}:hover {
+            background-color: var(--#{$color}-lighter);
+        }
+    }
+
+
+}
+
+.table-striped {
+    @each $color in $colors {
+        &-#{$color} {
+            tbody tr:nth-of-type(#{odd}) {
+                background: var(--#{$color});
+            }
+
+            tbody tr:nth-of-type(#{2n}) {
+                background: var(--#{$color}-lighter);
+            }
+        }
+
+
+    }
+
+
+}
+
+
+
+

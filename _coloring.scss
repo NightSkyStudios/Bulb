@@ -72,6 +72,14 @@ $colors: primary, success, warning, danger, blue, grey, pink, coral, purple, gre
     }
 }
 
+.bg-lighter{
+    @each $color in $colors {
+        &-#{$color} {
+            background-color: var(--#{$color}-lighter);
+        }
+    }
+}
+
 //Gradients
 .gr {
     @each $color in $colors {
