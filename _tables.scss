@@ -15,20 +15,6 @@ th, td {
 }
 
 
-.tr-hover {
-    @each $color in $colors {
-        &-#{$color}:hover {
-            background-color: var(--#{$color});
-        }
-
-        &-lighter-#{$color}:hover {
-            background-color: var(--#{$color}-lighter);
-        }
-    }
-
-
-}
-
 .table-striped {
     @each $color in $colors {
         &-#{$color} {
